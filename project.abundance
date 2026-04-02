@@ -1,326 +1,325 @@
 {
-    "atomType": "Molecule",
-    "name": "Cone",
-    "x": 0,
-    "y": 0,
-    "uniqueID": 1720830741397,
-    "ioValues": [
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": 1720830741397,
+  "name": "Cone",
+  "ioValues": [
+    {
+      "name": "Min",
+      "ioValue": 0.1
+    },
+    {
+      "name": "Max",
+      "ioValue": 1,
+      "currentEquation": "1"
+    },
+    {
+      "name": "Angle",
+      "ioValue": 60
+    },
+    {
+      "name": "zDist",
+      "ioValue": 1,
+      "currentEquation": "1"
+    }
+  ],
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": 1720830750358,
+      "ioValues": [
         {
-            "name": "Min",
-            "ioValue": 0.1
-        },
-        {
-            "name": "Max",
-            "ioValue": 10
-        },
-        {
-            "name": "Angle",
-            "ioValue": 60
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
         }
-    ],
-    "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
-    "topLevel": true,
-    "allAtoms": [
+      ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.15384615384615385,
+      "uniqueID": 1720830758174,
+      "name": "Min"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.24615384615384617,
+      "uniqueID": 1720830774323,
+      "name": "Max"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.3384615384615385,
+      "uniqueID": 1720830782009,
+      "name": "Angle"
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.22420634920634921,
+      "y": 0.5236768802228412,
+      "uniqueID": 1720830791507,
+      "ioValues": [
         {
-            "atomType": "Output",
-            "name": "Output",
-            "x": 0.98,
-            "y": 0.5,
-            "uniqueID": 1720830750358,
-            "ioValues": [
-                {
-                    "name": "number or geometry",
-                    "ioValue": 1720830823787
-                }
-            ],
-            "description": "Connect geometry here to make it available in the next level up. "
-        },
-        {
-            "atomType": "Input",
-            "name": "Min",
-            "x": 0.04,
-            "y": 0.31197771587743733,
-            "uniqueID": 1720830758174,
-            "ioValues": [],
-            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
-        },
-        {
-            "atomType": "Input",
-            "name": "Max",
-            "x": 0.04,
-            "y": 0.5236768802228412,
-            "uniqueID": 1720830774323,
-            "ioValues": [],
-            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
-        },
-        {
-            "atomType": "Input",
-            "name": "Angle",
-            "x": 0.04,
-            "y": 0.6740947075208913,
-            "uniqueID": 1720830782009,
-            "ioValues": [],
-            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
-        },
-        {
-            "atomType": "Circle",
-            "name": "Circle",
-            "x": 0.22420634920634921,
-            "y": 0.5236768802228412,
-            "uniqueID": 1720830791507,
-            "ioValues": [
-                {
-                    "name": "diameter",
-                    "ioValue": 10
-                }
-            ],
-            "description": "Creates a new circle."
-        },
-        {
-            "atomType": "Circle",
-            "name": "Circle",
-            "x": 0.20105820105820105,
-            "y": 0.2479108635097493,
-            "uniqueID": 1720830797481,
-            "ioValues": [
-                {
-                    "name": "diameter",
-                    "ioValue": 0.1
-                }
-            ],
-            "description": "Creates a new circle."
-        },
-        {
-            "atomType": "Move",
-            "name": "Move",
-            "x": 0.4801587301587301,
-            "y": 0.2256267409470752,
-            "uniqueID": 1720830808011,
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": 1720830797481
-                },
-                {
-                    "name": "xDist",
-                    "ioValue": 0
-                },
-                {
-                    "name": "yDist",
-                    "ioValue": 0
-                },
-                {
-                    "name": "zDist",
-                    "ioValue": 4.34
-                }
-            ],
-            "description": "Moves a shape laterally in X, Y, Z."
-        },
-        {
-            "atomType": "Loft",
-            "name": "Loft",
-            "x": 0.6302910052910052,
-            "y": 0.3816155988857939,
-            "uniqueID": 1720830823787,
-            "ioValues": [
-                {
-                    "name": "3D shape 1",
-                    "ioValue": 1720830791507
-                },
-                {
-                    "name": "3D shape 2",
-                    "ioValue": 1720830808011
-                },
-                {
-                    "name": "3D shape 3",
-                    "ioValue": ""
-                },
-                {
-                    "name": "3D shape 1",
-                    "ioValue": 1720830791507
-                },
-                {
-                    "name": "3D shape 2",
-                    "ioValue": 1720830808011
-                },
-                {
-                    "name": "3D shape 3",
-                    "ioValue": ""
-                }
-            ],
-            "description": "Joins two or more shapes into a single solid by filling in the space between them. Also called 'hull'",
-            "closedSelection": 0
-        },
-        {
-            "atomType": "Equation",
-            "name": "L*math.Tan(A)",
-            "x": 0.22619047619047616,
-            "y": 0.7688022284122563,
-            "uniqueID": 1720830880089,
-            "ioValues": [
-                {
-                    "name": "L",
-                    "ioValue": 1
-                },
-                {
-                    "name": "m",
-                    "ioValue": 1
-                },
-                {
-                    "name": "a",
-                    "ioValue": 1
-                },
-                {
-                    "name": "t",
-                    "ioValue": 1
-                },
-                {
-                    "name": "h",
-                    "ioValue": 1
-                },
-                {
-                    "name": "T",
-                    "ioValue": 1
-                },
-                {
-                    "name": "n",
-                    "ioValue": 1
-                },
-                {
-                    "name": "A",
-                    "ioValue": 1
-                }
-            ],
-            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-            "currentEquation": "L*math.Tan(A)"
-        },
-        {
-            "atomType": "Code",
-            "name": "Code",
-            "x": 0.30224867724867727,
-            "y": 0.796657381615599,
-            "uniqueID": 1720831313806,
-            "ioValues": [
-                {
-                    "name": "input1",
-                    "ioValue": 10
-                },
-                {
-                    "name": "height",
-                    "ioValue": 10
-                }
-            ],
-            "description": "Defines a Replicad code block.",
-            "codeVersion": 1,
-            "code": "//Inputs:[input1, height];\n\nlet shape = drawRectangle(5,7)\n\nconst newPlane = new Plane().pivot(0, 'Y');\n\n return { geometry: [shape.sketchOnPlane(newPlane).extrude(7)], tags: [],\n      color: '#A3CE5B',\n      plane: newPlane}\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return 25;\n\n      - See more examples at _______ \n\n\n    */\n"
-        },
-        {
-            "atomType": "Move",
-            "name": "Move",
-            "x": 0.7123015873015873,
-            "y": 0.7604456824512534,
-            "uniqueID": 1734742245911,
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": 1720830823787
-                },
-                {
-                    "name": "xDist",
-                    "ioValue": 0
-                },
-                {
-                    "name": "yDist",
-                    "ioValue": 0
-                },
-                {
-                    "name": "zDist",
-                    "ioValue": ""
-                }
-            ],
-            "description": "Moves a shape laterally in X, Y, Z."
-        },
-        {
-            "atomType": "Code",
-            "name": "Code",
-            "x": 0.5165343915343915,
-            "y": 0.7799442896935932,
-            "uniqueID": 1734742254045,
-            "ioValues": [
-                {
-                    "name": "input1",
-                    "ioValue": 10
-                },
-                {
-                    "name": "height",
-                    "ioValue": 10
-                }
-            ],
-            "description": "Defines a Replicad code block.",
-            "codeVersion": 1,
-            "code": "//Inputs:[input1, height];\n\nlet shape = drawRectangle(5,7)\n\nconst newPlane = new Plane().pivot(0, 'Y');\n\n return 100;\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n\n      - See more examples at _______ \n\n\n    */\n"
+          "name": "diameter",
+          "ioValue": 1
         }
-    ],
-    "allConnectors": [
+      ]
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.20105820105820105,
+      "y": 0.2479108635097493,
+      "uniqueID": 1720830797481,
+      "ioValues": [
         {
-            "ap1Name": "number or geometry",
-            "ap2Name": "diameter",
-            "ap2Primary": false,
-            "ap1ID": 1720830758174,
-            "ap2ID": 1720830797481
-        },
-        {
-            "ap1Name": "number or geometry",
-            "ap2Name": "diameter",
-            "ap2Primary": false,
-            "ap1ID": 1720830774323,
-            "ap2ID": 1720830791507
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "3D shape 1",
-            "ap2Primary": false,
-            "ap1ID": 1720830791507,
-            "ap2ID": 1720830823787
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 1720830797481,
-            "ap2ID": 1720830808011
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "3D shape 2",
-            "ap2Primary": false,
-            "ap1ID": 1720830808011,
-            "ap2ID": 1720830823787
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
-            "ap2Primary": false,
-            "ap1ID": 1720830823787,
-            "ap2ID": 1720830750358
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 1720830823787,
-            "ap2ID": 1734742245911
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "zDist",
-            "ap2Primary": false,
-            "ap1ID": 1734742254045,
-            "ap2ID": 1734742245911
+          "name": "diameter",
+          "ioValue": 0.1
         }
-    ],
-    "unitsKey": "MM",
-    "fileTypeVersion": 1,
-    "compiledBom": [],
-    "filetypeVersion": 1
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.4768015794669299,
+      "y": 0.23291925465838512,
+      "uniqueID": 1720830808011,
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 1
+        }
+      ]
+    },
+    {
+      "atomType": "Loft",
+      "x": 0.6302910052910052,
+      "y": 0.3816155988857939,
+      "uniqueID": 1720830823787,
+      "ioValues": [
+        {
+          "name": "3D shape 1",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "3D shape 2",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "3D shape 3",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "3D shape 1",
+          "ioValue": {
+            "geometry": "circle-0.5",
+            "dimension": "2D",
+            "tags": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "bom": []
+          }
+        },
+        {
+          "name": "3D shape 2",
+          "ioValue": {
+            "geometry": "move-circle-0.05-0-0-0",
+            "dimension": "2D",
+            "tags": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                1
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "bom": []
+          }
+        },
+        {
+          "name": "3D shape 3",
+          "ioValue": ""
+        }
+      ],
+      "closedSelection": 0
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.22619047619047616,
+      "y": 0.7688022284122563,
+      "uniqueID": 1720830880089,
+      "name": "L*math.Tan(A)",
+      "ioValues": [
+        {
+          "name": "L",
+          "ioValue": 1
+        },
+        {
+          "name": "math",
+          "ioValue": 1
+        },
+        {
+          "name": "A",
+          "ioValue": 1
+        }
+      ],
+      "currentEquation": "L*math.Tan(A)"
+    },
+    {
+      "atomType": "Code",
+      "x": 0.30224867724867727,
+      "y": 0.796657381615599,
+      "uniqueID": 1720831313806,
+      "ioValues": [
+        {
+          "name": "input1",
+          "ioValue": 10
+        },
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ],
+      "codeVersion": 1,
+      "code": "//Inputs:[input1, height];\n\nlet shape = drawRectangle(5,7)\n\nconst newPlane = new Plane().pivot(0, 'Y');\n\n return { geometry: [shape.sketchOnPlane(newPlane).extrude(7)], tags: [],\n      color: '#A3CE5B',\n      plane: newPlane}\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return 25;\n\n      - See more examples at _______ \n\n\n    */\n"
+    },
+    {
+      "atomType": "Move",
+      "x": 0.7123015873015873,
+      "y": 0.7604456824512534,
+      "uniqueID": 1734742245911,
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Code",
+      "x": 0.5165343915343915,
+      "y": 0.7799442896935932,
+      "uniqueID": 1734742254045,
+      "ioValues": [
+        {
+          "name": "input1",
+          "ioValue": 10
+        },
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ],
+      "codeVersion": 1,
+      "code": "//Inputs:[input1, height];\n\nlet shape = drawRectangle(5,7)\n\nconst newPlane = new Plane().pivot(0, 'Y');\n\n return 100;\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n\n      - See more examples at _______ \n\n\n    */\n"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.4307692307692308,
+      "uniqueID": "id-38",
+      "name": "zDist"
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap2Name": "diameter",
+      "ap1ID": 1720830758174,
+      "ap2ID": 1720830797481
+    },
+    {
+      "ap2Name": "diameter",
+      "ap1ID": 1720830774323,
+      "ap2ID": 1720830791507
+    },
+    {
+      "ap2Name": "3D shape 1",
+      "ap1ID": 1720830791507,
+      "ap2ID": 1720830823787
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": 1720830797481,
+      "ap2ID": 1720830808011
+    },
+    {
+      "ap2Name": "3D shape 2",
+      "ap1ID": 1720830808011,
+      "ap2ID": 1720830823787
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": 1720830823787,
+      "ap2ID": 1720830750358
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": 1720830823787,
+      "ap2ID": 1734742245911
+    },
+    {
+      "ap2Name": "zDist",
+      "ap1ID": 1734742254045,
+      "ap2ID": 1734742245911
+    },
+    {
+      "ap2Name": "zDist",
+      "ap1ID": "id-38",
+      "ap2ID": 1720830808011
+    }
+  ],
+  "unitsKey": "MM",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
